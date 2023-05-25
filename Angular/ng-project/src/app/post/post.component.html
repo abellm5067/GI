@@ -1,0 +1,5 @@
+<p [class.text-red]="">{{title | uppercase }}</p>
+<input type="text" name="value" id="value" (keyup.enter)="OnKeyUp($event,username)" #username>
+<input type="text" name="username" id="username" [(ngModel)]="userName">
+<button (click)="OnClick()">Click</button>
+<img [src]="imageUrl" alt="hi"/>

@@ -1,0 +1,22 @@
+.ct-width{
+    max-width: 1024px;
+    margin:auto;
+    color: azure;
+    font-family: 'dubai medium';
+}
+.bg-ctus-image{
+    background-image: url("../../assets/ContactUs.jpg");
+    min-height: 750px;
+}
+.slide-left {
+    animation: 1s slide-left;
+  }
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+  

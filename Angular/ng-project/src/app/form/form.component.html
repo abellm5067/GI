@@ -1,0 +1,38 @@
+<div>
+    <input type="text" name="formtitle" placeholder="title" [(ngModel)]="myObject.title"/>
+    <br><br>
+    <input type="text" name="formurl" placeholder="url" [(ngModel)]="myObject.url"/>
+    <br><br><input type="text" name="formsrc" placeholder="image path" [(ngModel)]="myObject.src"/>
+    <br><br><textarea name="mess" id="" cols="30" rows="10" placeholder="comment" [(ngModel)]="myObject.content"></textarea>
+    <br><br><input type="checkbox" name="add" [(ngModel)]="myObject.isBackground"/>Add Background
+    <br><br>
+    <button (click)="addNew()">Submit</button>
+</div>
+<div [class.form-yellow]="myObject.isBackground">
+    <p>{{myObject.title}}</p>
+    
+    <a *ngIf="myObject.url.length>0" [href]="myObject.url" target="_blank">more details</a>
+    <p>{{myObject.content}}</p>
+    <img [src]="myObject.src" />
+</div>
+<div *ngIf="myArray.length>0; else elseBlock" >
+    <ul>
+        <li *ngFor="let item of myArray;let i=index">
+            Id: {{item.Id}}, Name:{{item.Name | append}}
+            <button (click)="onDelete(item)">Delete</button>
+            <button (click)="onDeleteByIndex(item)">DeleteByDirectIndex</button>
+        </li>
+    </ul>
+</div>
+<ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
+<div>
+    <button (click)="onClick('1')">1</button>
+    <button (click)="onClick('2')">2</button>
+    <button (click)="onClick('3')">3</button>
+    
+</div>
+<div [ngSwitch]="typeOfFirm">
+    <div *ngSwitchCase="'1'">this is 1</div>
+    <div *ngSwitchCase="'2'">this is 2</div>
+    <div *ngSwitchCase="'3'">this is 3</div>
+</div>

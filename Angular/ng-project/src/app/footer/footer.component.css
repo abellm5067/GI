@@ -1,0 +1,30 @@
+.height-full{
+    min-height:200px ;
+    background-color: rgb(16 52 84 / 68%);
+    color: white;
+}
+.row{
+    padding:50px;
+    padding-bottom: 10px;
+}
+#footer-id .col-md-4{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.pd-footer{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#footer-id h6{
+margin-bottom: 5px;
+}
+#footer-id .col-sm-12{
+    margin-top: 20px;
+}
+svg{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#ftrsocial a{
+    color: aliceblue;
+}

@@ -1,0 +1,63 @@
+#hm-card {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  font-family: 'dubai medium';
+}
+
+.dummy {
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.dummy img{
+  max-height: 240px;
+}
+.dummy:hover {
+  border: solid;
+  border-color: aqua;
+}
+
+.border {
+  border-radius: 0px 0px 0.25rem 0.25rem !important;
+  border-width: 0px 2px 2px !important;
+  border-style: dashed !important;
+  border-color: rgb(162 115 255 / var(--tw-border-opacity)) !important;
+  min-height: 450px;
+}
+
+/***** Global Slide *****/
+.slide-right,
+.slide-left {
+  width: 100%;
+}
+
+/***** Slide Right *****/
+.slide-right {
+  animation: 3s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Slide Left *****/
+.slide-left {
+  animation: 0.5s slide-left;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}

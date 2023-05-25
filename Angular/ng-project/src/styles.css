@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  body{
+    background-image: url("assets/Background-Image.jpg") !important;
+    font-family: 'dubai medium';
+  }

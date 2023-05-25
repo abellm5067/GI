@@ -1,0 +1,25 @@
+<div class="slide-left">
+    <div class="text-center mt-5">
+      <h1>{{'Welcome to Global Insights'|uppercase}}</h1> 
+    </div>
+    <app-carousel></app-carousel>
+
+    <div id="hm-card" class="row text-center reveal mt-5">
+        <div class="dummy col-md-4" *ngFor="let item of cardInfo">
+            <div class="border">
+                <img class="card-img-top" [src]="item.Src" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.Header}}</h5>
+                    <p class="card-text">{{item.Content}}</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="reveal">
+    <app-who-we-are></app-who-we-are>
+</div>
+</div>

@@ -1,0 +1,15 @@
+.content{
+    padding-left: 10%;
+    font-family: 'dubai medium';
+}
+.slide-right {
+    animation: 0.5s slide-right;
+  }
+  @keyframes slide-right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }

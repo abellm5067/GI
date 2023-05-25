@@ -1,0 +1,24 @@
+<div class="slide-right"><div class="p-5 text-center">
+    <h2>What We Offer?</h2>
+    <h2 class="mt-4" style="line-height: 45px;">
+        Global Insights provides IT business solutions to clients worldwide. Our primary goal is to provide high quality and cost effective business solutions and consulting services.
+    </h2>
+    <h5 class="mt-4" style="line-height: 40px;">
+        To stay ahead of the game, Global Insights uses the latest technologies and techniques as well as brings together both line-of-business and multi-platform expertise. An in-depth knowledge of various technology areas enables us to provide end-to-end solutions and services. All our services are designed to quickly deliver solutions that create lasting value and enhance efficiency and profits for our esteemed clients
+    </h5>
+</div>
+<div id="hm-card" class="row text-center mb-5 reveal">
+   
+    <div class="dummy col-md-4" *ngFor="let item of cardInfo">
+        <div class="border">
+        <img class="card-img-top" [src]="item.Src" alt="Card image cap">
+        <div class="card-body pt-1">
+            <h5 class="card-title pt-1">{{item.Header}}</h5>
+            <p class="card-text">{{item.Content}}</p>
+        </div>
+        <div class="card-footer pt-1 pb-1">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div></div>
+    </div>
+
+</div></div>
